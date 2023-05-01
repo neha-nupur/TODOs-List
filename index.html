@@ -195,6 +195,28 @@
           update();
         }
       }
+
+      // ----Automatically cleared the textarea-----
+
+      function getAndupdate() {
+        console.log("Updating List...");
+        tit = document.getElementById("title").value;
+        desc = document.getElementById("description").value;
+        if (localStorage.getItem("itemsJson") == null) {
+          itemJsonArray = [];
+          itemJsonArray.push([tit, desc]);
+          localStorage.setItem("itemsJson", JSON.stringify(itemJsonArray));
+        } else {
+          itemJsonArrayStr = localStorage.getItem("itemsJson");
+          itemJsonArray = JSON.parse(itemJsonArrayStr);
+          itemJsonArray.push([tit, desc]);
+          localStorage.setItem("itemsJson", JSON.stringify(itemJsonArray));
+        }
+        update();
+        document.getElementById("title").value = "";
+        document.getElementById("description").value = "";
+      }
+
     </script>
   </body>
 </html>
