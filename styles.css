@@ -1,8 +1,138 @@
-body {
-    background-color: rgb(182, 206, 198);
-}
 
-.size{
-    margin-left: auto;
-    margin-right: auto;
-}
+.navbar {
+    background-color: #99b3cc; 
+    box-shadow: 0 0 10px rgba(62, 54, 54, 0.5); 
+  }
+  
+ 
+  body{
+    background-color: #dcddbd;
+  }
+  
+
+  .nav-item {
+    padding: 0 10px;
+    font-size: 1.2rem;
+  }
+  
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #031629; 
+  }
+  
+ 
+  .size {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .form-label,
+  .form-text,
+  .form-control,
+  textarea,
+  .btn-primary {
+    border-radius: 10px; 
+    font-size: 1.2rem;
+  }
+  
+  .form-label, .form-text {
+    color: #686868;
+  }
+  
+  .form-control {
+    border-color: #000000; 
+    background-color: #e9ecef; 
+    color: #434343; 
+  }
+  
+  textarea {
+    background-color: #e9ecef; 
+    color: #000000; 
+    resize: none; 
+  }
+  
+  .btn-primary {
+    background-color: #0d929b; 
+    border-color: #0d929b; 
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background-color: #000000; 
+    border-color: #fdfdfd; 
+    color: #ffffff; 
+  }
+  
+
+  .table-responsive {
+    max-height: 500px; 
+    overflow-y: scroll;
+  }
+  
+  .table {
+    border: none;
+  }
+  
+  .table th {
+    background-color: #0d929b; 
+    color: #343a40;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .table td {
+    background-color: #e9ecef; 
+    color: #343a40; 
+    font-size: 1.2rem;
+  }
+  
+  .btn-sm {
+    border-radius: 10px; 
+    background-color: #e9ecef;
+    border-color: #e9ecef; 
+    color: #343a40; 
+    transition: all 0.2s ease-in-out; 
+  }
+  
+  .btn-sm:hover {
+    background-color: #0d929b; 
+    border-color: #0d929b; 
+    color: #343a40; 
+  }
+  
+  /* Form on different screen sizes */
+  .size {
+    width: 60%;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  /* Media query for small devices */
+  @media only screen and (max-width: 768px) {
+    .size {
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  
+  /* Media query for extra small devices */
+  @media only screen and (max-width: 576px) {
+    .size {
+      width: 100%;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
